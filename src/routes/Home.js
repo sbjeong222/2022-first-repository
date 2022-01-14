@@ -21,13 +21,10 @@ class Home extends React.Component {
     };
 
     componentDidMount() {
-        //영화 데이터 로딩!
-        console.log("rendered");
         this.getMovies();
     }
 
     render() {
-        console.log("rendering");
         const { isLoading, movies } = this.state;
         return (
             <section className="container">
